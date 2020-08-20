@@ -17,8 +17,7 @@ class CashRegister
     discount_decimal = discount / 100.to_f
     disc = (discount_decimal * total)
     self.total -= disc.to_i 
-    self.total
-    puts "After the discount, the total comes to #{self.total}."
+    "After the discount, the total comes to #{total}."
   end
 end
 
