@@ -19,6 +19,8 @@ class CashRegister
       disc = (discount_decimal * total)
       self.total -= disc.to_i 
       "After the discount, the total comes to $#{total}."
+    else
+      "There is no discount to apply."
   end
 end
 
