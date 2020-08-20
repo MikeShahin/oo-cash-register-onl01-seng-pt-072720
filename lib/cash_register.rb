@@ -18,7 +18,7 @@ class CashRegister
     disc = (discount_decimal * total)
     self.total = total - disc.to_i 
     
-    binding.pry
+    
   end
 end
 
