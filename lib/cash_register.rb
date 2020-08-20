@@ -8,7 +8,6 @@ class CashRegister
   end
   
   def add_item(title, price)
-    total = total + price
-    total
+    self.total += price
   end
 end
