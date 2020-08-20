@@ -12,8 +12,13 @@ class CashRegister
   end
   
   def apply_discount
-    discount_decimal = (discount.to_f / 100).to_i
+    discount_decimal = (discount / 100).to_f
     disc = (discount_decimal * total)
-    self.total = total - disc 
+    self.total = (total - disc).to_i 
   end
 end
+
+20/100
+
+0.2 * 100
+
