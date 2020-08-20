@@ -18,7 +18,3 @@ class CashRegister
   end
 end
 
-20/100
-
-0.2 * 100
-
