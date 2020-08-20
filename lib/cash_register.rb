@@ -1,3 +1,5 @@
+require pry
+
 class CashRegister
   
   attr_accessor :total, :discount
@@ -15,6 +17,8 @@ class CashRegister
     discount_decimal = (discount / 100).to_f
     disc = (discount_decimal * total)
     self.total = (total - disc).to_i 
+    
+    binding.pry
   end
 end
 
