@@ -14,10 +14,11 @@ class CashRegister
   end
   
   def apply_discount
-    discount_decimal = discount / 100.to_f
-    disc = (discount_decimal * total)
-    self.total -= disc.to_i 
-    "After the discount, the total comes to $#{total}."
+    if discount != 0
+      discount_decimal = discount / 100.to_f
+      disc = (discount_decimal * total)
+      self.total -= disc.to_i 
+      "After the discount, the total comes to $#{total}."
   end
 end
 
